@@ -1,0 +1,62 @@
+html {
+    font-size: 14px;
+}
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    background-color: blanchedalmond;
+    max-width: 576px;
+    font-family: 'Inter', sans-serif;
+}
+
+#head {
+    display: inline-flex;
+}
+
+#hero-section {
+    background-image: url(images/Background\ \(1\).png);
+    height: 1024px;
+    padding: 20px;
+    gap: 32px;
+}
+
+#artjunk-logo {
+    width: 167px;
+    height: 37px;
+}
+
+#collapse-menu{
+    float: right;
+}
+
+#line-graph {
+    margin-top: 260px;
+    width: 90px;
+    height: 15px;
+}
+
+#hero-main-text {
+    font-size: 50px;
+    color: #FFFFFF;
+    font-family: 'libre caslon display', serif;
+    font-weight: 400;
+}
+
+#hero-sub-text {
+    font-size: 18px;
+    line-height: 169%;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+#learn-more-button {
+    background-color: rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    font-size: 18px;
+    width: 153px;
+    height: 42px;
+    margin-top: 25px;
+}
