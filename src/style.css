@@ -2,32 +2,43 @@ html {
     font-size: 14px;
 }
 
-body{
+body {
     margin: 0 auto;
-    padding: 0;
-    background-color: blanchedalmond;
+    background-color: #FFFFFF;
     max-width: 576px;
     font-family: 'Inter', sans-serif;
+    min-width: 375px;
 }
 
 #head {
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
 }
 
 #hero-section {
     background-image: url(images/Background\ \(1\).png);
-    height: 1024px;
-    padding: 20px;
+    height: 900px;
+    padding: 32px;
     gap: 32px;
+    margin: 0 ;
+    /* min-width: 375px; */
 }
+
+#mid-hero-sction {
+    min-width: 314px;
+    margin: 0 auto;
+
+}
+
 
 #artjunk-logo {
     width: 167px;
     height: 37px;
 }
 
-#collapse-menu{
-    float: right;
+#collapse-menu {
+    align-self: flex-end;
+    margin-left: auto;
 }
 
 #line-graph {
@@ -39,8 +50,11 @@ body{
 #hero-main-text {
     font-size: 50px;
     color: #FFFFFF;
-    font-family: 'libre caslon display', serif;
-    font-weight: 400;
+    font-family: 'libre caslon display', sans-serif;
+    font-weight: 400px;
+    text-decoration: solid;
+    height: 186px;
+    width: 314px;
 }
 
 #hero-sub-text {
@@ -59,4 +73,152 @@ body{
     width: 153px;
     height: 42px;
     margin-top: 25px;
+}
+
+#news-section {
+    padding: 32px;
+    margin: 0 auto;
+    width: 311px;
+}
+
+#newest-reads {
+    margin-top: 32px;
+    margin-bottom: 64px;
+}
+
+#news-card {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.card-image1 {
+    display: none;
+}
+
+.news-card {
+    width: 311px;
+    height: 619px;
+    margin: 32px 0;
+}
+
+.card-info {
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    height: 224.5417175292969px;
+    margin-top: -32px;
+    padding: 64px 32px 0 32px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card-date {
+    font-size: 13px;
+    color: #B7B7B7;
+}
+
+.card-main-text {
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20px;
+    height: 126px;
+}
+
+.read-more-link-with-arrow {
+    align-self: flex-end;
+    margin-top: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #D9852C;
+
+
+}
+
+
+
+
+@media screen and (min-width: 576px) {
+
+
+    body {
+        margin: 0 auto;
+        padding: 0;
+        background-color: #FFFFFF;
+        max-width: 744px;
+    }
+
+    #hero-section {
+        background-image: url(images/Background\ \(1\).png);
+        height: 900px;
+        /* margin: 0 auto; */
+        /* width: 600px; */
+        min-width: 600px;
+    }
+
+    #mid-hero-sction {
+        max-width: 600px;
+    }
+
+    #hero-main-text {
+        width: 600px;
+        height: 174px;
+        margin: 0;
+        margin-top: 32px;
+    }
+
+    #hero-sub-text {
+        margin: 0;
+    }
+
+    #news-section {
+        padding: 32px;
+        margin: 0 auto;
+        width: 600px;
+    }
+
+    #newest-reads {
+        margin-top: 32px;
+        margin-bottom: 64px;
+        font-size: 30px;
+        font-style: bold;
+
+    }
+
+    #news-card {
+        width: 600px;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .news-card {
+        width: 187px;
+        height: 635px;
+        margin: 32px 0;
+        margin: 0 auto;
+    }
+
+    .card-image {
+        display: none;
+    }
+
+    .card-image1 {
+        display: block;
+    }
+
+
+    .card-info {
+        border: 1px solid #DDDDDD;
+        max-width: 123px;
+        /* padding: 0; */
+
+    }
+
+    .card-main-text {
+        font-size: 15px;
+
+    }
+
 }
