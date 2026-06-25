@@ -20,7 +20,7 @@ body {
     height: 900px;
     padding: 32px;
     gap: 32px;
-    margin: 0 ;
+    margin: 0;
     /* min-width: 375px; */
 }
 
@@ -147,7 +147,7 @@ a {
         margin: 0 auto;
         padding: 0;
         background-color: #FFFFFF;
-        max-width: 744px;
+        max-width: 768px;
     }
 
     #hero-section {
@@ -220,5 +220,47 @@ a {
         font-size: 15px;
 
     }
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+
+
+    body {
+        margin: 0 auto;
+        padding: 0;
+        background-color: #FFFFFF;
+        min-width: 768px;
+        max-width: 1440px;
+    }
+
+    #hero-section {
+        background-image: url(images/Background\ \(2\).png);
+        /* min-width: 768px; */
+        max-width: 1440px;
+        height: 900px;
+        margin: 0 auto;
+    }
+
+    #line-graph {
+        margin-top: 200px;
+    }
+
+    #mid-hero-sction {
+        max-width: 748px;
+        margin: 0;
+        margin-left: 72px;
+    }
+
+    #hero-main-text {
+        font-size: 70px;
+        max-width: 748px;
+        margin-bottom: 32px;
+    }
+
+
 
 }
