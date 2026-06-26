@@ -3,11 +3,11 @@ html {
 }
 
 body {
-    margin: 0 auto;
+    margin: 0;
     background-color: #FFFFFF;
     max-width: 576px;
     font-family: 'Inter', sans-serif;
-    min-width: 375px;
+    /* min-width: 375px; */
 }
 
 #head {
@@ -21,7 +21,7 @@ body {
     padding: 32px;
     gap: 32px;
     margin: 0;
-    /* min-width: 375px; */
+    min-width: 375px;
 }
 
 #mid-hero-sction {
@@ -55,6 +55,7 @@ body {
     text-decoration: solid;
     height: 186px;
     width: 314px;
+    margin-bottom: 72px;
 }
 
 #hero-sub-text {
@@ -147,7 +148,7 @@ a {
         margin: 0 auto;
         padding: 0;
         background-color: #FFFFFF;
-        max-width: 768px;
+        max-width: 900px;
     }
 
     #hero-section {
@@ -164,7 +165,7 @@ a {
 
     #hero-main-text {
         width: 600px;
-        height: 174px;
+        height: 154px;
         margin: 0;
         margin-top: 32px;
     }
@@ -189,6 +190,7 @@ a {
 
     #news-card {
         width: 600px;
+        max-width: 600px;
         display: flex;
         margin: 0 auto;
     }
@@ -206,12 +208,13 @@ a {
 
     .card-image1 {
         display: block;
+        width: 189px;
     }
 
 
     .card-info {
         border: 1px solid #DDDDDD;
-        max-width: 123px;
+        width: 123px;
         /* padding: 0; */
 
     }
@@ -225,22 +228,22 @@ a {
 
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
 
 
 
     body {
-        margin: 0 auto;
-        padding: 0;
         background-color: #FFFFFF;
-        min-width: 768px;
-        max-width: 1440px;
+        /* min-width: 768px; */
+        /* margin-right: 0;
+ */
+        max-width: 1380px;
     }
 
     #hero-section {
         background-image: url(images/Background\ \(2\).png);
         /* min-width: 768px; */
-        max-width: 1440px;
+        min-width: 1300px;
         height: 900px;
         margin: 0 auto;
     }
@@ -256,11 +259,68 @@ a {
     }
 
     #hero-main-text {
-        font-size: 70px;
         max-width: 748px;
         margin-bottom: 32px;
     }
 
+    #news-section {
+        width: 1300px;
+        margin-right: -20px;
+    }
+
+    #newest-reads {
+        font-size: 40px;
+        width: 350px;
+    }
+
+    .news-card {
+        min-width: 400px;
+        /* max-width: 768px; */
+        margin: 0 auto;
+        margin-left:10px ;
+                margin-right:10px ;
+
+    }
+
+    #news-card {
+        margin: 0;
+                min-width: 1300px;
+
+    }
+
+
+    .card-image {
+        display: flex;
+    }
+
+    .card-image img {
+        min-width: 400px;
+        height: 352px;
+    }
+
+    .card-image1 {
+        display: none;
+    }
+
+    .card-info {
+        min-width: 400px;
+        padding: 0;
+        padding-top: 72px;
+    }
+
+    .card-date {
+        padding: 0 32px;
+    }
+
+    .card-main-text {
+        padding: 0 32px;
+        font-size: 25px;
+    }
+
+    .read-more-link-with-arrow {
+        padding: 0 32px;
+        font-size: 15px;
+    }
 
 
 }
